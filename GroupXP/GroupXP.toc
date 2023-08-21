@@ -1,0 +1,7 @@
+## Interface: 50400
+## Title: GroupXP
+## Notes: A simple addon to display the current experience of party members.
+## Author: Cowmonster (http://www.wowinterface.com)
+## Version: 1.0.1
+## SavedVariables: GroupXPDB
+GroupXP.lua
