@@ -279,8 +279,10 @@ local function OnEvent(self, event, ...)
 				class = select(2, UnitClass("player"))
 			end
 
-			if message == "REFRESH" and not strfind(sender, UnitName("player"), 1) then
-				SendXP()
+			if message == "REFRESH" then
+				if not strfind(sender, UnitName("player"), 1) then
+					SendXP()
+				end
 			else
 				AddUnit(sender, class, message)
 				GroupXP_Refresh()
